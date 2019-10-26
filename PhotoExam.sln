@@ -4,7 +4,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoServer", "PhotoServer\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoClientDotNet", "PhotoClientDotNet\PhotoClientDotNet.csproj", "{07073F77-6CFB-4065-BD2D-942A22B4995D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotonClientU3D", "PhotonClientU3D\PhotonClientU3D.csproj", "{0405A191-13C7-4342-8B68-22961BF17443}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "ChatClientU3D\Assembly-CSharp.csproj", "{274C34F9-756C-16D0-2FE4-E17E24D70660}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,8 +20,9 @@ Global
 		{07073F77-6CFB-4065-BD2D-942A22B4995D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07073F77-6CFB-4065-BD2D-942A22B4995D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07073F77-6CFB-4065-BD2D-942A22B4995D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0405A191-13C7-4342-8B68-22961BF17443}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0405A191-13C7-4342-8B68-22961BF17443}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0405A191-13C7-4342-8B68-22961BF17443}.Release|Any CPU.Build.0 = Release|Any CPU
+		{274C34F9-756C-16D0-2FE4-E17E24D70660}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{274C34F9-756C-16D0-2FE4-E17E24D70660}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{274C34F9-756C-16D0-2FE4-E17E24D70660}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{274C34F9-756C-16D0-2FE4-E17E24D70660}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

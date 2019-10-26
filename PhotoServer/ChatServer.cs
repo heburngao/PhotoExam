@@ -44,7 +44,7 @@ namespace PhotoServer
 
                         SendOperationResponse(
                             new OperationResponse(2,
-                                new Dictionary<byte, object>() {{20, operationRequest.OperationCode + "|" + obj}}),
+                                new Dictionary<byte, object>() {{20, operationRequest.OperationCode + "|:)" + obj}}),
                             sendParameters);
                     }
 
