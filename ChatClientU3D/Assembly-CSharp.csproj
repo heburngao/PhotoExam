@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Main.cs" />
+     <None Include="Assets\Version.txt" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>D:/PROJ/Photon/PhotoExam/ChatClientU3D/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
