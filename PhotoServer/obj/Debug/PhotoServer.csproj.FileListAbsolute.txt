@@ -1,0 +1,7 @@
+F:\BaiduNetdiskDownload\photon\Photon\photon Server\deploy\ChatServer\bin\PhotoServer.dll
+F:\BaiduNetdiskDownload\photon\Photon\photon Server\deploy\ChatServer\bin\PhotoServer.pdb
+D:\PROJ\Photon\PhotoExam\PhotoServer\obj\Debug\PhotoServer.csprojAssemblyReference.cache
+D:\PROJ\Photon\PhotoExam\PhotoServer\obj\Debug\PhotoServer.csproj.CoreCompileInputs.cache
+D:\PROJ\Photon\PhotoExam\PhotoServer\obj\Debug\PhotoServer.csproj.CopyComplete
+D:\PROJ\Photon\PhotoExam\PhotoServer\obj\Debug\PhotoServer.dll
+D:\PROJ\Photon\PhotoExam\PhotoServer\obj\Debug\PhotoServer.pdb

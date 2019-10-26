@@ -1,0 +1,10 @@
+D:\PROJ\Photon\PhotoExam\PhotoClientDotNet\bin\Debug\PhotoClientDotNet.exe
+D:\PROJ\Photon\PhotoExam\PhotoClientDotNet\bin\Debug\PhotoClientDotNet.pdb
+D:\PROJ\Photon\PhotoExam\PhotoClientDotNet\bin\Debug\Photon3DotNet.dll
+D:\PROJ\Photon\PhotoExam\PhotoClientDotNet\bin\Debug\Photon3DotNet.pdb
+D:\PROJ\Photon\PhotoExam\PhotoClientDotNet\bin\Debug\Photon3DotNet.xml
+D:\PROJ\Photon\PhotoExam\PhotoClientDotNet\obj\Debug\PhotoClientDotNet.csprojAssemblyReference.cache
+D:\PROJ\Photon\PhotoExam\PhotoClientDotNet\obj\Debug\PhotoClientDotNet.csproj.CoreCompileInputs.cache
+D:\PROJ\Photon\PhotoExam\PhotoClientDotNet\obj\Debug\PhotoClientDotNet.csproj.CopyComplete
+D:\PROJ\Photon\PhotoExam\PhotoClientDotNet\obj\Debug\PhotoClientDotNet.exe
+D:\PROJ\Photon\PhotoExam\PhotoClientDotNet\obj\Debug\PhotoClientDotNet.pdb

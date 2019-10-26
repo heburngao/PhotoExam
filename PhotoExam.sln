@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoServer", "PhotoServer\PhotoServer.csproj", "{7ADCE70C-36B6-4373-980D-40356B912479}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoClientDotNet", "PhotoClientDotNet\PhotoClientDotNet.csproj", "{07073F77-6CFB-4065-BD2D-942A22B4995D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotonClientU3D", "PhotonClientU3D\PhotonClientU3D.csproj", "{0405A191-13C7-4342-8B68-22961BF17443}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7ADCE70C-36B6-4373-980D-40356B912479}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ADCE70C-36B6-4373-980D-40356B912479}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ADCE70C-36B6-4373-980D-40356B912479}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ADCE70C-36B6-4373-980D-40356B912479}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07073F77-6CFB-4065-BD2D-942A22B4995D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07073F77-6CFB-4065-BD2D-942A22B4995D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07073F77-6CFB-4065-BD2D-942A22B4995D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07073F77-6CFB-4065-BD2D-942A22B4995D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0405A191-13C7-4342-8B68-22961BF17443}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0405A191-13C7-4342-8B68-22961BF17443}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0405A191-13C7-4342-8B68-22961BF17443}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0405A191-13C7-4342-8B68-22961BF17443}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
