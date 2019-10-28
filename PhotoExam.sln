@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoClientDotNet", "PhotoC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "ChatClientU3D\Assembly-CSharp.csproj", "{274C34F9-756C-16D0-2FE4-E17E24D70660}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSQL", "MSQL\MSQL.csproj", "{95515DE8-2023-4EB6-A350-59C2578AF6F6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{274C34F9-756C-16D0-2FE4-E17E24D70660}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{274C34F9-756C-16D0-2FE4-E17E24D70660}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{274C34F9-756C-16D0-2FE4-E17E24D70660}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95515DE8-2023-4EB6-A350-59C2578AF6F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95515DE8-2023-4EB6-A350-59C2578AF6F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95515DE8-2023-4EB6-A350-59C2578AF6F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95515DE8-2023-4EB6-A350-59C2578AF6F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
