@@ -43,6 +43,29 @@ namespace MSQL.Manager
                 }
             }
         }
+
+        public void DelUserById(int id)
+        {
+            using (var session = NHIbernateHelper.OpenSession()){
+                using (var tran = session.BeginTransaction())
+                {
+                    var user = new MUser();
+                    user.Id = id;
+                    session.Delete(user);
+                    tran.Commit();
+                }    
+            }
+        }
+        public void UpdateUser(MUser user)
+        {
+            using (var session = NHIbernateHelper.OpenSession()){
+                using (var tran = session.BeginTransaction())
+                {
+                    session.Update(user);
+                    tran.Commit();
+                }    
+            }
+        }
         public static void TestFn()
         {
             var mgr = new UserManager();
@@ -56,7 +79,13 @@ namespace MSQL.Manager
             newuser.PassWord = "222222";
             newuser.Age = 3;
             mgr.SaveUser(newuser);
-            
+
+            var userX = list[0];
+            userX.Age = 100;
+            userX.PassWord = "0123456789";
+            mgr.UpdateUser(userX);
+//            mgr.DelUserById(4);
+
             Console.ReadKey();
         }
     }
