@@ -26,7 +26,7 @@ namespace MSQL
                 return sessionFactory;
             }
         }
-
+         
         public static ISession OpenSession()
         {
             return SessionFactory.OpenSession();
