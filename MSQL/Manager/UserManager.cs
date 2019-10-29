@@ -75,7 +75,7 @@ namespace MSQL.Manager
                 Console.WriteLine(item.Id + " - " + item.UserName+" - " + item.PassWord +" - "+item.Age);
             }
             var newuser = new MUser();
-            newuser.UserName = "高奀";
+            newuser.UserName = "高 奀";
             newuser.PassWord = "222222";
             newuser.Age = 3;
             mgr.SaveUser(newuser);
