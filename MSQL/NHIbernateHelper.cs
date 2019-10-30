@@ -9,7 +9,7 @@ namespace MSQL
     public class NHIbernateHelper
     {
             static ISessionFactory sessionFactory;
-        public  static  void InitializeSessionFactory()
+        private  static  void InitializeSessionFactory()
         {
             var cnf = MySQLConfiguration.Standard.ConnectionString(db => 
                 db.Server("localhost").Database("hellodb").Username("root").Password("gongxifacai")

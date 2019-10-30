@@ -82,10 +82,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Manager\MySQL_userManager.cs" />
     <Compile Include="Manager\UserManager.cs" />
     <Compile Include="Model\Mapping\UserMap.cs" />
     <Compile Include="Model\MUser.cs" />
     <Compile Include="MySQLClient.cs" />
+    <Compile Include="MySQLClientHelper.cs" />
     <Compile Include="NHIbernateHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -19,6 +19,7 @@
         <e p="App.config" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Manager" t="Include">
+          <e p="MySQL_userManager.cs" t="Include" />
           <e p="UserManager.cs" t="Include" />
         </e>
         <e p="Model" t="Include">
@@ -29,6 +30,7 @@
         </e>
         <e p="MSQL.csproj" t="IncludeRecursive" />
         <e p="MySQLClient.cs" t="Include" />
+        <e p="MySQLClientHelper.cs" t="Include" />
         <e p="NHIbernateHelper.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive" />
         <e p="packages.config" t="Include" />

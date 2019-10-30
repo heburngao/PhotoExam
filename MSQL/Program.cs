@@ -13,9 +13,10 @@ namespace MSQL
         public static void Main(string[] args)
         {
 
-            UserManager.TestFn();
+//            UserManager.TestFn();
 
 //            MySQLClient.TestFn();
+            MySQL_userManager.TestFn();
 
         }
     }
