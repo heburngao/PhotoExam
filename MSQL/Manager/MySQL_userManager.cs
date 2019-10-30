@@ -19,16 +19,7 @@ namespace MSQL.Manager
 
                         cmd.Connection = session;
                         cmd.CommandText = "select * from users";
-//                            cmd.ExecuteNonQuery();
-//                            tran.Commit();
                         var reader = cmd.ExecuteReader();
-
-//                        for (int i = 0 ; i < reader.GetSchemaTable().Rows.Count; i++ )
-//                        {
-//                            DataRow row = reader.GetSchemaTable().Rows[i];
-//                            Console.WriteLine("x id: " + row[0] + " userName : " +
-//                                              row[1] + " , " +row[2] +" , " + row[3]);
-//                        }
                         while (reader.Read())
                         {
                             Console.WriteLine("id: " + reader.GetInt32("id") + " userName : " +
@@ -57,8 +48,7 @@ namespace MSQL.Manager
 
                     cmd.Connection = session;
                     cmd.CommandText = "select * from users";
-//                            cmd.ExecuteNonQuery();
-//                            tran.Commit();
+ 
                     var reader = cmd.ExecuteReader();
 
                      
@@ -86,11 +76,99 @@ namespace MSQL.Manager
                 }
             }
         }
+        
+        public void SaveUser(MUser user)
+        {
+            using (var session = MySQLClientHelper.OpenSession())
+            {
+                using (var cmd = session.CreateCommand())
+                {
+                    var list = new List<MUser>();
+
+                    cmd.Connection = session;
+                    cmd.CommandText = string.Format("insert into users(id,userName,passWord,age) values ({0},'{1}','{2}',{3})", user.Id,user.UserName,user.PassWord,user.Age) ;
+                    if (cmd.ExecuteNonQuery() > 0)
+                    {
+                        Console.WriteLine(" save succeed");
+                    }
+                    else
+                    {
+                        Console.WriteLine(" save failed");
+                    }
+
+                    session.Close();
+                }
+            }
+        }
+
+        public void DelUser(int id)
+        {
+            using (var session = MySQLClientHelper.OpenSession())
+            {
+                using (var cmd = session.CreateCommand())
+                {
+                    var list = new List<MUser>();
+
+                    cmd.Connection = session;
+                    cmd.CommandText = string.Format("delete from users where id = {0}", id) ;
+                    if (cmd.ExecuteNonQuery() > 0)
+                    {
+                        Console.WriteLine(" delete succeed");
+                    }
+                    else
+                    {
+                        Console.WriteLine(" delete failed");
+                    }
+
+                    session.Close();
+                }
+            }
+        }
+        public void UpdateUser(MUser user)
+        {
+            using (var session = MySQLClientHelper.OpenSession())
+            {
+                using (var cmd = session.CreateCommand())
+                {
+                    var list = new List<MUser>();
+
+                    cmd.Connection = session;
+                    cmd.CommandText = string.Format("update users set userName = '{0}', age = {1}, passWord = '{2}' where id = {3}", user.UserName,user.Age,user.PassWord,user.Id) ;
+                    if (cmd.ExecuteNonQuery() > 0)
+                    {
+                        Console.WriteLine(" update succeed");
+                    }
+                    else
+                    {
+                        Console.WriteLine(" update failed");
+                    }
+
+                    session.Close();
+                }
+            }
+        }
         public static void TestFn()
         {
              var mgr = new MySQL_userManager();
-//             var list = mgr.GetAllUser();
-            var list = mgr.GetUserByName("ghb");
+             var list1 = mgr.GetAllUser();
+            var list = mgr.GetUserByName("ga");
+            mgr.UpdateUser(new MUser
+            {
+                Id = 3,
+                UserName = "ga",
+                PassWord = "1111",
+                Age = 1,
+            });
+            
+            mgr.DelUser(3);
+            
+            mgr.SaveUser(new MUser
+            {
+                Id = 3,
+                UserName = "ga",
+                PassWord = "1111",
+                Age = 1,
+            });
 
         }
     }
