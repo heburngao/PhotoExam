@@ -84,6 +84,7 @@
   <ItemGroup>
     <Compile Include="Manager\MySQL_userManager.cs" />
     <Compile Include="Manager\UserManager.cs" />
+    <Compile Include="Model\Mapping\InventoryItemMap.cs" />
     <Compile Include="Model\Mapping\UserMap.cs" />
     <Compile Include="Model\MUser.cs" />
     <Compile Include="MySQLClient.cs" />
