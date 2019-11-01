@@ -51,7 +51,9 @@
       </e>
       <e p="PhotoExam.sln" t="IncludeFlat" />
       <e p="PhotoServer" t="IncludeRecursive">
+        <e p="App.config" t="Include" />
         <e p="ChatServer.cs" t="Include" />
+        <e p="log4net.config" t="Include" />
         <e p="obj" t="ExcludeRecursive" />
         <e p="PhotoServer.csproj" t="IncludeRecursive" />
         <e p="Properties" t="Include">
