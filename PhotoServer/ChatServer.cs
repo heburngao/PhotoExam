@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Configuration;
 using System.IO;
 using ExitGames.Diagnostics.Counter;
 using ExitGames.Diagnostics.Monitoring;
@@ -25,6 +27,8 @@ namespace PhotoServer
 
         protected override void Setup()
         {
+            
+            
               log4net.GlobalContext.Properties["Photon:ApplicationLogPath"] = Path.Combine(this.ApplicationRootPath, "log");
               log4net.GlobalContext.Properties["LogFileName"] = "XX" + this.ApplicationName;
               var file = new FileInfo(Path.Combine(this.BinaryPath, "log4net.config"));
@@ -35,7 +39,8 @@ namespace PhotoServer
               }
               log.InfoFormat("Create application Instance: Type={0}", Instance.GetType());
               log.Debug("!!!!!!!!!!!!!!!!! Application setup complete");
-
+              var set = ConfigurationManager.AppSettings["ooxx"];
+              log.Debug(" setting : " + set);
               Initialize();
         }
 
