@@ -17,7 +17,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>F:\BaiduNetdiskDownload\photon\Photon\photon Server\deploy\ChatServer\bin</OutputPath>
+    <OutputPath>D:\DOWNLOADS\ExitGames-Photon-Server-SDK_v3-4-31-10808\deploy\PhotonChatServer\bin</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -33,27 +33,34 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ExitGames.Logging.Log4Net, Version=1.0.1.0, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0">
-      <HintPath>F:\BaiduNetdiskDownload\photon\Photon\photon Server\lib\ExitGames.Logging.Log4Net.dll</HintPath>
+      <HintPath>..\..\PhotonDllLib\ExitGames.Logging.Log4Net.dll</HintPath>
     </Reference>
     <Reference Include="ExitGamesLibs, Version=1.0.1.0, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0">
-      <HintPath>F:\BaiduNetdiskDownload\photon\Photon\photon Server\lib\ExitGamesLibs.dll</HintPath>
+      <HintPath>..\..\PhotonDllLib\ExitGamesLibs.dll</HintPath>
+    </Reference>
+    <Reference Include="LitJson, Version=0.9.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\PhotonDllLib\LitJson.dll</HintPath>
     </Reference>
     <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a">
-      <HintPath>F:\BaiduNetdiskDownload\photon\Photon\photon Server\lib\log4net.dll</HintPath>
+      <HintPath>..\..\PhotonDllLib\log4net.dll</HintPath>
     </Reference>
-    <Reference Include="Photon.SocketServer, Version=3.4.30.9718, Culture=neutral, PublicKeyToken=48c2fa3b6988090e">
-      <HintPath>F:\BaiduNetdiskDownload\photon\Photon\photon Server\lib\Photon.SocketServer.dll</HintPath>
+    <Reference Include="Photon.SocketServer, Version=3.4.31.10808, Culture=neutral, PublicKeyToken=48c2fa3b6988090e">
+      <HintPath>..\..\PhotonDllLib\Photon.SocketServer.dll</HintPath>
     </Reference>
     <Reference Include="PhotonHostRuntimeInterfaces, Version=3.58.0.0, Culture=neutral, PublicKeyToken=6cb1467adaa73020">
-      <HintPath>F:\BaiduNetdiskDownload\photon\Photon\photon Server\lib\PhotonHostRuntimeInterfaces.dll</HintPath>
+      <HintPath>..\..\PhotonDllLib\PhotonHostRuntimeInterfaces.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ChatServer.cs" />
+    <Compile Include="DB\DBHelper.cs" />
+    <Compile Include="Handlers\BaseHandler.cs" />
+    <Compile Include="Handlers\LoginHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -63,10 +70,6 @@
     <Content Include="log4net.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DB" />
-    <Folder Include="Handlers" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Common\Common.csproj">

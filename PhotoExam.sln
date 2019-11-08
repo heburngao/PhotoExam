@@ -1,6 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.902
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoServer", "PhotoServer\PhotoServer.csproj", "{7ADCE70C-36B6-4373-980D-40356B912479}"
+	ProjectSection(ProjectDependencies) = postProject
+		{28E6449E-EECC-4431-B4FF-F9D37B071336} = {28E6449E-EECC-4431-B4FF-F9D37B071336}
+		{95515DE8-2023-4EB6-A350-59C2578AF6F6} = {95515DE8-2023-4EB6-A350-59C2578AF6F6}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoClientDotNet", "PhotoClientDotNet\PhotoClientDotNet.csproj", "{07073F77-6CFB-4065-BD2D-942A22B4995D}"
 EndProject
@@ -36,5 +43,11 @@ Global
 		{28E6449E-EECC-4431-B4FF-F9D37B071336}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28E6449E-EECC-4431-B4FF-F9D37B071336}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28E6449E-EECC-4431-B4FF-F9D37B071336}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9701409E-F246-4812-BEE0-1139EB5A4BF2}
 	EndGlobalSection
 EndGlobal

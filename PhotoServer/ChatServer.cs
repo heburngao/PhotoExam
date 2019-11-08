@@ -8,6 +8,7 @@ using ExitGames.Logging;
 using ExitGames.Logging.Log4Net;
 
 using log4net.Config;
+using MSQL.Model;
 using Photon.SocketServer;
 using Photon.SocketServer.Diagnostics;
 using PhotonHostRuntimeInterfaces;
@@ -21,7 +22,7 @@ namespace PhotoServer
         private static readonly ILogger log = LogManager.GetCurrentClassLogger();
         protected override PeerBase CreatePeer(InitRequest initRequest)
         {
-            var clientPeer = new ChatPeer(initRequest.Protocol,initRequest.PhotonPeer);
+            var clientPeer = new ClientPeer(initRequest.Protocol,initRequest.PhotonPeer);
             return clientPeer;
         }
 
@@ -62,14 +63,24 @@ namespace PhotoServer
         public static readonly NumericCounter Games = new NumericCounter("Photo");
     }
 
-    public class ChatPeer : PeerBase
+    public class ClientPeer : PeerBase
     {
         private static readonly ILogger log = LogManager.GetCurrentClassLogger();
-        public ChatPeer(InitRequest initRequest) : base(initRequest)
-        {
-        }
 
-        public ChatPeer(IRpcProtocol protocol, IPhotonPeer unmanagedPeer) : base(protocol, unmanagedPeer)
+        #region VARIABLES
+/// <summary>
+/// save current user account info for login
+/// </summary>
+        public MUser LoginUser { get; set; }
+//TODO        public Role LoginRole { get; set; } 
+//TODO        public Team Team { get; set; }
+
+        #endregion
+//        public ClientPeer(InitRequest initRequest) : base(initRequest)
+//        {
+//        }
+
+        public ClientPeer(IRpcProtocol protocol, IPhotonPeer unmanagedPeer) : base(protocol, unmanagedPeer)
         {
         }
 
@@ -95,6 +106,9 @@ namespace PhotoServer
         protected override void OnDisconnect(DisconnectReason reasonCode, string reasonDetail)
         {
             log.Debug("!!!!!!!!!!!!! disconnect ");
+            
+            //TODO 
+            
         }
     }
 }
