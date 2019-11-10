@@ -34,11 +34,22 @@ namespace PhotoServer.Handlers
                 {
                     //username and password is correct, success , login
                     response.ReturnCode = (short) ReturnCode.Success;
-                    clientPeer.LoginUser = userDB;
+                    clientPeer.LoginUser = mUser;
+                }
+                else
+                {
+                    response.ReturnCode = (short) ReturnCode.Fail;
+                    response.DebugMessage = "username or password error !";
                 }
             }
         }
 
-        public override OpCode OpCode { get; }
+        public override OpCode OpCode
+        {
+            get
+            {
+                return OpCode.Login;
+            }
+        }
     }
 }
