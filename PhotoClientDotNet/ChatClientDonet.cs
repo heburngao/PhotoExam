@@ -18,7 +18,7 @@ namespace PhotoClientDotNet
             foreach (SomethingAttribute o in ass)
             { 
                 Console.WriteLine("attribute: " +o.Name +"/"+o.Data +"/"+ o.TypeId);
-            }
+            } 
             //toTestPhoton();
         }
 
