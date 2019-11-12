@@ -11,15 +11,15 @@ namespace PhotoClientDotNet
         
         public static void Main(string[] args)
         {
-            //var example = new UseAttributeExample();
+           
 
-            Type t = typeof(AA);//UseAttributeExample);
-            var ass = t.GetCustomAttributes(typeof(SomethingAttribute), true);
-            foreach (SomethingAttribute o in ass)
-            { 
-                Console.WriteLine("attribute: " +o.Name +"/"+o.Data +"/"+ o.TypeId);
-            } 
-            //toTestPhoton();
+//            Type t = typeof(AA);//UseAttributeExample);
+//            var ass = t.GetCustomAttributes(typeof(SomethingAttribute), true);
+//            foreach (SomethingAttribute o in ass)
+//            { 
+//                Console.WriteLine("attribute: " +o.Name +"/"+o.Data +"/"+ o.TypeId);
+//            } 
+            toTestPhoton();
         }
 
         private static void toTestPhoton()
