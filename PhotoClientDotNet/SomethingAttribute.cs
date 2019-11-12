@@ -37,7 +37,7 @@ namespace PhotoServer
 class UseAttributeExample
 {
     public UseAttributeExample()
-    {
+    { 
         
     }
 }
