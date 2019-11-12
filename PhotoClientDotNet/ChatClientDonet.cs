@@ -11,7 +11,7 @@ namespace PhotoClientDotNet
         
         public static void Main(string[] args)
         {
-            
+            //ooxx
 
             Type t = typeof(AA);//UseAttributeExample);
             var ass = t.GetCustomAttributes(typeof(SomethingAttribute), true);
