@@ -45,7 +45,7 @@ class UseAttributeExample
 [Something]
 class AA : UseAttributeExample
 {
-     
+     //xxxx
 }
 
 [Something]
