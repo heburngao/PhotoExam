@@ -1,5 +1,4 @@
-﻿ 
-using Common;
+﻿using Common;
 using ExitGames.Logging;
 using Photon.SocketServer;
 

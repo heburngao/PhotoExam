@@ -1,12 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Reflection;
 using ExitGames.Client.Photon;
+using PhotoServer;
 
 namespace PhotoClientDotNet
 {
     public   class ChatClientDonet
     {
+        
         public static void Main(string[] args)
+        {
+            //var example = new UseAttributeExample();
+
+            Type t = typeof(AA);//UseAttributeExample);
+            var ass = t.GetCustomAttributes(typeof(SomethingAttribute), true);
+            foreach (SomethingAttribute o in ass)
+            {
+                Console.WriteLine("attribute: " +o.Name +"/"+o.Data +"/"+ o.TypeId);
+            }
+            //toTestPhoton();
+        }
+
+        private static void toTestPhoton()
         {
             PeerListener listener = new PeerListener();
             var peer = new PhotonPeer(listener, ConnectionProtocol.Tcp);
@@ -22,6 +38,8 @@ namespace PhotoClientDotNet
             {
                 peer.Service();
             }
+
+            Console.WriteLine("end");
         }
     }
 
